@@ -7,7 +7,7 @@ dat$DateTime = strptime(paste(dat$Date, dat$Time), format="%d/%m/%Y %H:%M:%S")
 dat$Global_active_power = as.numeric(dat$Global_active_power)
 
 # Create the Plot only
-plot(dat$DateTime,dat$Global_active_power, xlab = "", ylab = "Global Active Power",
+plot(dat$DateTime,dat$Global_active_power, xlab = "", ylab = "Global Active Power (kilowatts)",
      main = "", type = "l")
 
 # Create the PNG w/ plot
