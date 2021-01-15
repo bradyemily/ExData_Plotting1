@@ -21,7 +21,7 @@ plot(dat$DateTime,dat$Sub_metering_1, xlab = "", ylab = "Energy sub metering",
 lines(dat$DateTime,dat$Sub_metering_2, col = "red")
 lines(dat$DateTime,dat$Sub_metering_3, col = "blue")
 legend("topright", legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
-       col = c("black","red","blue"),lty = 1)
+       col = c("black","red","blue"),lty = 1, box.lty = 0, inset = 0.01)
 plot(dat$DateTime,dat$Global_reactive_power, type = "l", xlab = "datetime",
      ylab = "Global_reactive_power", main = "")
 
